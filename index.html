@@ -25,7 +25,6 @@
         .kbd-lg {
             cursor: pointer;
         }
-
     </style>
 </head>
 
@@ -68,39 +67,40 @@
 
     <!-- header section  -->
     <header
-        class="container mx-auto flex justify-center bg-[url(./images/banner.png)] bg-no-repeat bg-cover bg-center  py-32 rounded-3xl">
+        class="container mx-auto flex justify-center bg-[url(./images/banner.png)] bg-no-repeat bg-cover bg-center  lg:py-32 rounded-3xl ">
         <div class="  text-center">
-            <h1 class="raleway text-white text-6xl font-extrabold pt-14">End-to-End Travel with</h1>
-            <h2 class="raleway text-[#1DD100] text-6xl font-extrabold pt-6 pb-4">P Paribahan</h2>
-            <p class="pb-8 px-54 text-lg text-[#FFF]">Embark on your journey with ease! Book your bus tickets hassle-free on our convenient platform today<br> Secure your bus tickets effortlessly with us now.</p>
-            <button onclick="clickForBuyTicket()" class="btn mb-24 bg-[#1DD100] border-none text-lg">Buy
+            <h1 class="raleway text-white lg:text-6xl font-extrabold lg:pt-14">End-to-End Travel with</h1>
+            <h2 class="raleway text-[#1DD100] lg:text-6xl font-extrabold lg:pt-6 lg:pb-4">P Paribahan</h2>
+            <p class="lg:pb-8 lg:px-54 text-lg text-[#FFF]">Embark on your journey with ease! Book your bus tickets
+                hassle-free on our convenient platform today<br> Secure your bus tickets effortlessly with us now.</p>
+            <button onclick="clickForBuyTicket()" class="btn lg:mb-24 bg-[#1DD100] border-none lg:text-lg">Buy
                 tickets</button>
         </div>
     </header>
 
 
     <!-- main section -->
-    <main class="container mx-auto mb-24">
+    <main class="container mx-auto mb-8">
         <!-- best offer section -->
 
         <section class="mb-16">
             <h1 class="text-4xl font-bold raleway text-center mt-[120px] mb-12">Best offers for you</h1>
-            <div class="flex justify-center gap-10">
+            <div class="lg:flex justify-center gap-10">
                 <div class="bg-[#FFBF0F] flex h-[220px] rounded-3xl">
-                    <div class="p-12 inter">
-                        <h1 class=" text-5xl font-black pb-4">15% OFF</h1>
-                        <h3 class="font-semibold text-xl pb-2">on your next purchase</h3>
-                        <p class="font-medium text-lg text-[#03071266]">use by January 2024</p>
+                    <div class="lg:p-12 p-4 inter">
+                        <h1 class=" lg:text-5xl text-xl font-black lg:pb-4 pb-1">15% OFF</h1>
+                        <h3 class="font-semibold lg:text-xl text-base pb-2">on your next purchase</h3>
+                        <p class="font-medium lg:text-lg text-sm text-[#03071266]">use by January 2024</p>
                     </div>
                     <div>
                         <img class="h-[220px]" src="./images/cupon-devider.png" alt="">
                     </div>
-                    <div class="pl-6 pr-12 py-[70px] raleway">
-                        <h1 class="text-3xl font-bold pb-2 ">NEW15</h1>
+                    <div class=" lg:pl-6 lg:pr-12 py-[70px] raleway">
+                        <h1 class="text-3xl font-bold lg:pb-2 ">NEW15</h1>
                         <p class="text-[#03071266]">Coupon Code</p>
                     </div>
                 </div>
-                <div>
+                <div class="mt-5 lg:mt-auto">
                     <div class="bg-[#F78C9C] flex h-[220px] rounded-3xl">
                         <div class="p-12 inter">
                             <h1 class=" text-5xl font-black pb-4">20% OFF</h1>
@@ -123,11 +123,12 @@
         </section>
 
         <!-- ph poribohon section  -->
-        <section class=" bg-gray-50 rounded-t-2xl px-10">
+        <section class=" bg-gray-50 rounded-t-[88px] px-10 py-8 border-t-4 border-t-[#1DD100] rounded-lg">
             <section id="ph-poribohon">
                 <div class="text-center mb-12">
                     <h1 class="text-4xl font-bold raleway py-6">P.H Paribahan</h1>
-                    <p class="text-lg font-normal px-[350px]">Travel confidently with P.H Paribahan. Where comfort meets reliability, book your bus tickets today!</p>
+                    <p class="text-lg font-normal px-[350px]">Travel confidently with P.H Paribahan. Where comfort meets
+                        reliability, book your bus tickets today!</p>
                 </div>
                 <!-- green line poribohon  -->
                 <div class="grid grid-cols-12 bg-white  rounded-xl">
@@ -141,7 +142,8 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="flex bg-[#1DD10026] w-[180px] rounded-xl p-[17px] gap-2 inter font-semibold">
+                                <div
+                                    class="flex bg-[#1DD10026] w-[180px] rounded-xl p-[17px] gap-2 inter font-semibold">
                                     <img src="./images/seat-green.png" alt="">
                                     <p><span id="abailable-seat">40</span> Seats left</p>
                                 </div>
@@ -180,9 +182,9 @@
             </section>
 
             <!-- purchase ticket section  -->
-            <section class="grid grid-cols-12 p-8 ">
+            <section class="grid grid-cols-12 p-8 mt-8 bg-white rounded-3xl">
                 <!-- seat  -->
-                <div class="col-span-6 border-r-2 border-dashed pr-12">
+                <div class="col-span-7 border-r-2 border-dashed pr-6 py-8">
                     <h1 class="text-2xl font-semibold raleway">Select your seat</h1>
                     <hr class="border-dashed mt-6 mb-4">
                     <div class="flex justify-between">
@@ -205,7 +207,7 @@
                     <!-- seat number -->
                     <div class="grid grid-cols-11 gap-4 mt-6">
                         <!-- ------------------a----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">A</kbd>
+                        <kbd class="kbd bg-white border-none">A</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="A1" class="kbd kbd-lg px-10">A1</kbd>
                             <kbd id="A2" class="kbd kbd-lg px-10">A2</kbd>
@@ -215,7 +217,7 @@
                             <kbd id="A4" class="kbd kbd-lg px-10">A4</kbd>
                         </div>
                         <!-- --------------b----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">B</kbd>
+                        <kbd class="kbd bg-white border-none">B</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="B1" class="kbd kbd-lg px-10">B1</kbd>
                             <kbd id="B2" class="kbd kbd-lg px-10">B2</kbd>
@@ -226,7 +228,7 @@
                         </div>
                         <!-- --------------c----------- -->
 
-                        <kbd class="kbd bg-gray-50 border-none">C</kbd>
+                        <kbd class="kbd bg-white border-none">C</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="C1" class="kbd kbd-lg px-10">C1</kbd>
                             <kbd id="C2" class="kbd kbd-lg px-10">C2</kbd>
@@ -236,7 +238,7 @@
                             <kbd id="C4" class="kbd kbd-lg px-10">C4</kbd>
                         </div>
                         <!-- --------------d----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">D</kbd>
+                        <kbd class="kbd bg-white border-none">D</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="D1" class="kbd kbd-lg px-10">D1</kbd>
                             <kbd id="D2" class="kbd kbd-lg px-10">D2</kbd>
@@ -246,7 +248,7 @@
                             <kbd id="D4" class="kbd kbd-lg px-10">D4</kbd>
                         </div>
                         <!-- --------------e----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">E</kbd>
+                        <kbd class="kbd bg-white border-none">E</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="E1" class="kbd kbd-lg px-10">E1</kbd>
                             <kbd id="E2" class="kbd kbd-lg px-10">E2</kbd>
@@ -256,7 +258,7 @@
                             <kbd id="E4" class="kbd kbd-lg px-10">E4</kbd>
                         </div>
                         <!-- --------------f----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">F</kbd>
+                        <kbd class="kbd bg-white border-none">F</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="F1" class="kbd kbd-lg px-10">F1</kbd>
                             <kbd id="F2" class="kbd kbd-lg px-10">F2</kbd>
@@ -266,7 +268,7 @@
                             <kbd id="F4" class="kbd kbd-lg px-10">F4</kbd>
                         </div>
                         <!-- --------------g----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">G</kbd>
+                        <kbd class="kbd bg-white border-none">G</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="G1" class="kbd kbd-lg px-10">G1</kbd>
                             <kbd id="G2" class="kbd kbd-lg px-10">G2</kbd>
@@ -276,7 +278,7 @@
                             <kbd id="G4" class="kbd kbd-lg px-10">G4</kbd>
                         </div>
                         <!-- --------------h----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">H</kbd>
+                        <kbd class="kbd bg-white border-none">H</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="H1" class="kbd kbd-lg px-10">H1</kbd>
                             <kbd id="H2" class="kbd kbd-lg px-10">H2</kbd>
@@ -286,7 +288,7 @@
                             <kbd id="H4" class="kbd kbd-lg px-10">H4</kbd>
                         </div>
                         <!-- --------------i----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">I</kbd>
+                        <kbd class="kbd bg-white border-none">I</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="I1" class="kbd kbd-lg px-10">I1</kbd>
                             <kbd id="I2" class="kbd kbd-lg px-10">I2</kbd>
@@ -296,7 +298,7 @@
                             <kbd id="I4" class="kbd kbd-lg px-10">I4</kbd>
                         </div>
                         <!-- --------------j----------- -->
-                        <kbd class="kbd bg-gray-50 border-none">J</kbd>
+                        <kbd class="kbd bg-white border-none">J</kbd>
                         <div class=" col-span-5 flex gap-12 px-4">
                             <kbd id="J1" class="kbd kbd-lg px-10">J1</kbd>
                             <kbd id="J2" class="kbd kbd-lg px-10">J2</kbd>
@@ -309,10 +311,10 @@
                 </div>
 
                 <!-- payment -->
-                <div class="col-span-6 px-8 py-8 bg-white rounded-lg ml-16">
+                <div class="col-span-5 py-8 bg-white rounded-lg ml-10">
                     <h1 class="text-2xl font-semibold raleway">Order Summary</h1>
                     <hr class="border-dashed my-2">
-                    <div class="bg-gray-50 rounded-xl">
+                    <div class="bg-gray-50 rounded-t-lg">
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <!-- head -->
@@ -330,64 +332,74 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="grid grid-cols-2 px-4 my-3 font-semibold inter">
-                        <h1>Total Price</h1>
-                        <h2 class="pl-36">BDT <span id="total-price">0</span></h2>
-                    </div>
-                    <!-- coupon  -->
-                    <h2 id="invalid-coupon" class="mx-10 text-red-500 text-sm"></h2>
-                    <div class="flex gap-4 pl-10">
-                        <input id="inputed" type="text" placeholder="Have any copupon?"
-                            class="input input-bordered w-full max-w-xs" />
-                        <button id="apply-btn" class="btn btn-success">Apply</button>
-                    </div>
 
-                    <!-- discount  -->
-                    <div id="discount" class="grid grid-cols-2 px-4 hidden mt-3 mb-8 font-semibold inter">
-                        <h1>discount</h1>
-                        <h2 class="pl-36">BDT <span id="discountPrice">0</span></h2>
-                    </div>
-                    <!-- grand total  -->
-                    
-                    <div class="grid grid-cols-2 px-4 mt-3 mb-8 font-semibold inter">
-                        <h1>Grand Total</h1>
-                        <h2 class="pl-36">BDT <span id="grand-total">0</span></h2>
+                    <!-- -----------  -->
+                    <div class="bg-gray-50 pt-3 pb-2 rounded-b-lg">
+                        <div class="grid grid-cols-2 px-4 my-3 font-semibold inter">
+                            <h1>Total Price</h1>
+                            <h2 class="pl-36">BDT <span id="total-price">0</span></h2>
+                        </div>
+                        <!-- coupon  -->
+                        <h2 id="invalid-coupon" class="mx-10 text-red-500 text-sm"></h2>
+                        <div class="flex gap-4 pl-10 w-full ">
+                            <input id="inputed" type="text" placeholder="Have any copupon?"
+                                class="input input-bordered w-[85%] max-w-screen relative py-7 border-none rounded-full" />
+                            <button id="apply-btn" class="btn btn-success absolute px-10 ml-[15.7%] text-white rounded-full mt-[4px]" disabled>Apply</button>
+                        </div>
+
+                        <!-- discount  -->
+                        <div id="discount" class="grid grid-cols-2 px-4 hidden mt-3 mb-8 font-semibold inter">
+                            <h1>discount</h1>
+                            <h2 class="pl-36">BDT <span id="discountPrice">0</span></h2>
+                        </div>
+                        <!-- grand total  -->
+
+                        <div class="grid grid-cols-2 px-4 mt-3 mb-8 font-semibold inter">
+                            <h1>Grand Total</h1>
+                            <h2 class="pl-36">BDT <span id="grand-total">0</span></h2>
+                        </div>
                     </div>
 
                     <!-- ----------------passenger info----------------- -->
                     <div>
                         <div>
                             <div>
-                                <label class="form-control w-full max-w-screen-sm">
+                                <label class="form-control w-full max-w-screen-lg">
                                     <div class="label">
                                         <span class="label-tex text-base font-semibold">Passenger Name*</span>
                                     </div>
-                                    <input id="passenger" type="text" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
-                                        required />
+                                    <input id="passenger" type="text" placeholder="Type here"
+                                        class="input inputing input-bordered w-full max-w-screen-lg" required />
                                 </label>
-                                <label class="form-control w-full max-w-xs">
+                                <label class="form-control w-full max-w-screen-lg">
                                     <div class="label">
                                         <span class="label-tex text-base font-semibold">Phone number*</span>
                                     </div>
-                                    <input id="phone-number" type="number" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
-                                        required />
+                                    <input id="phone-number" type="number" placeholder="Type here"
+                                        class="input inputing input-bordered w-full max-w-screen-lg" required />
                                 </label>
                                 <label class="form-control w-full max-w-screen-lg">
                                     <div class="label">
                                         <span class="label-tex text-base font-semibold">Email id</span>
                                     </div>
-                                    <input id="email" type="email" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
-                                        required />
+                                    <input id="email" type="email" placeholder="Type here"
+                                        class="input inputing input-bordered w-full max-w-screen-lg" required />
                                 </label>
                             </div>
-                            <button id="next-btn" class="btn hidden success bg-[#1DD100] text-white raleway mt-10 w-[325px]" onclick="my_modal_4.showModal()">Next</button>
+                            <button disabled id="next-btn"
+                                class="btn success bg-[#1DD100] text-white raleway mt-10 w-full"
+                                onclick="my_modal_4.showModal()">Next</button>
+                                <div class="flex gap-10 justify-center mt-4 underline text-base inter text-[#030712] cursor-pointer">
+                                    <h1>Terms and condition</h1>
+                                    <h1>Cancelation policy</h1>
+                                </div>
                         </div>
                         <!-- .................... -->
                         <!-- ------------modal start ------------------ -->
                         <!-- You can open the modal using ID.showModal() method -->
-                        
+
                         <dialog id="my_modal_4" class="modal">
-                            <div class="modal-box w-11/12 max-w-3xl">
+                            <div id="modal-close" class="modal-box w-11/12 max-w-3xl pb-10">
                                 <div class="text-center">
                                     <div class="flex justify-center mt-10 mb-4">
                                         <img src="./images/success.png" alt="">
@@ -395,32 +407,64 @@
                                     <h1 class="mb-6 uppercase inter text-2xl font-bold text-green-500">Success</h1>
                                     <h2 class="text-xl font-medium text-[#4A4A4A]">Thank you for Booking Our Bus Seats.
                                         <br>
-                                        We are working hard to find the best service and deals for you</h2>
+                                        We are working hard to find the best service and deals for you
+                                    </h2>
                                     <p class="text-lg font-light text-[#4A4A4A] inter my-3">Shortly you will find a
                                         confirmation in your email.</p>
-                                    <button class="btn px-16 rounded-full bg-green-500">Continue</button>
+                                        <a href="https://code-huntingx.github.io/Assignment5-b9/"><button id="close" class="btn  px-16 rounded-full bg-green-500">Continue</button></a>
                                 </div>
-                                <div class="modal-action">
-                                    <form method="dialog">
-                                        <!-- if there is a button, it will close the modal -->
-                                        <button class="btn">Close</button>
-                                    </form>
-                                </div>
+                                
                             </div>
                         </dialog>
                         <!-- ------------modal end ------------------ -->
                     </div>
-
                 </div>
             </section>
         </section>
 
     </main>
 
+ <div class="text-center mb-8 font-medium raleway text-xl">
+ </div>
+    <!-- footer section  -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
 
 
-    <script src="./script.js"></script>
+    <!-- --------------------------  -->
+
     <script src="./ticket.js"></script>
+    <script src="./script.js"></script>
+    <script src="./reselect.js"></script>
+
+    <script>
+        const closeBtn = document.getElementById('close').addEventListener('click', function(){
+            console.log('okkkkkk')
+            document.getElementById('modal-close').classList.add('hidden');
+        })
+    </script>
+
+
 </body>
 
 </html>
