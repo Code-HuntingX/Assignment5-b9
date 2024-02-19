@@ -307,16 +307,16 @@
             </div>
 
             <!-- payment -->
-            <div class="col-span-6">
-                <h1 class="border-dashed">Select Your Seat</h1>
-                <hr>
+            <div class="col-span-6 px-8">
+                <h1 class="">Select Your Seat</h1>
+                <hr class="border-dashed mt-6">
                 <div>
                     <div class="overflow-x-auto">
                         <table class="table">
                           <!-- head -->
                           <thead>
                             <tr>
-                              <th>seat <span id="seat">2</span></th>
+                              <th>seat <span id="seat" class="bg-green-600 px-2 text-white rounded-md">0</span></th>
                               <th>Class</th>
                               <th>Price</th>
                             </tr>
@@ -340,19 +340,20 @@
                       </div>
                 </div>
                 <hr>
-                <div class="grid grid-cols-2 px-4">
+                <div class="grid grid-cols-2 px-4 my-3">
                     <h1>Total Price</h1>
-                    <h2 class="pl-56">BDT <span id="total-price">0</span></h2>
+                    <h2 class="pl-36">BDT <span id="total-price">0</span></h2>
                 </div>
                 <!-- coupon  -->
-                <div>
-                    <input id="inputed" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                <h2 id="invalid-coupon" class="mx-10 text-red-500 text-sm"></h2>
+                <div class="flex gap-4 pl-10">
+                    <input id="inputed" type="text" placeholder="Have any copupon?" class="input input-bordered w-full max-w-xs" />
                     <button id="apply-btn" class="btn">Apply</button>
                 </div>
                 <!-- grand total  -->
-                <div class="grid grid-cols-2 px-4">
+                <div class="grid grid-cols-2 px-4 mt-3">
                     <h1>Grand Total</h1>
-                    <h2 class="pl-56">BDT <span id="grand-total">0</span></h2>
+                    <h2 class="pl-40">BDT <span id="grand-total">0</span></h2>
                 </div>
             </div>
         </section>

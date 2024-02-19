@@ -1,5 +1,5 @@
 
-function billing(seat, price, total){
+function billing(seat, price, total) {
     const tbody = document.getElementById('tbody');
     const tr = document.createElement('tr')
 
@@ -24,22 +24,34 @@ function billing(seat, price, total){
 }
 
 
-function couponNew(value){
+function couponNew(value) {
     const btn = document.getElementById('apply-btn')
     const code = document.getElementById('inputed');
+    const invalidCoupon = document.getElementById('invalid-coupon');
     let grandPrice = document.getElementById('grand-total');
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function () {
         const coupon = code.value;
-    if(value === 4 && coupon ==='NEW15' ){
-        let grandTotal = total - total * 0.15;
-        grandPrice.innerText = grandTotal;
+        if (value === 4 && coupon === 'new') {
+            let grandTotal = total - total * 0.15;
+            grandPrice.innerText = grandTotal;
+            invalidCoupon.innerText = "";
+            console.log(value)
+            return disableBtn('apply-btn');
 
-    }
-    else if(value === 4 && coupon === 'Couple 20'){
-        let grandTotal = total - total * 0.2 ;
-        grandPrice.innerText = grandTotal;
-    }
-    return alert('ok')
+        }
+        else if (value === 4 && coupon === 'Couple 20') {
+            let grandTotal = total - total * 0.2;
+            grandPrice.innerText = grandTotal;
+            invalidCoupon.innerText = "";
+            return disableBtn('apply-btn');
+        }
+        else if (value !== 4) {
+            invalidCoupon.innerText = 'you must select 4 seat for use coupon'
+        }
+        else if (value === 4) {
+            invalidCoupon.innerText = 'coupon invalid or used'
+        }
+
     })
 }
 
