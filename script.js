@@ -8,7 +8,7 @@ let perSeat = 550;
 let total = 0;
 let setNum = [];
 
-
+let grandPrice = document.getElementById('grand-total');
 const allSeats = document.getElementsByClassName('kbd-lg')
 for (const seats of allSeats) {
     seats.addEventListener('click', function () {
@@ -18,7 +18,7 @@ for (const seats of allSeats) {
    
 
 
-        if (seatNumber !== setNum[i]) {
+        if (!setNum.includes(seatNumber)) {
             if (seat >= 4) {
                 return alert('you select maxium of seat')
     
@@ -31,6 +31,7 @@ for (const seats of allSeats) {
             setInnerText('abailable-seat', abailabeSeat);
 
             total += 550;
+            grandPrice.innerText = total;
             billing(seatNumber, perSeat, total);
             //    disableBtn(seatNumber)
             clickOnces(seatNumber);
@@ -61,6 +62,11 @@ function removeBg(id) {
 
 }
 
+function disableBtn(id) {
+    const setid = document.getElementById(id);
+    setid.setAttribute('disabled', 'true');
+
+}
 function disableBtn(id) {
     const setid = document.getElementById(id);
     setid.setAttribute('disabled', 'true');
