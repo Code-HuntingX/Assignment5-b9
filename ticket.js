@@ -31,7 +31,7 @@ function couponNew(value) {
     let grandPrice = document.getElementById('grand-total');
     btn.addEventListener('click', function () {
         const coupon = code.value;
-        if (value === 4 && coupon === 'new') {
+        if (value === 4 && coupon === 'NEW15') {
             let grandTotal = total - total * 0.15;
             grandPrice.innerText = grandTotal;
             invalidCoupon.innerText = "";
@@ -56,9 +56,4 @@ function couponNew(value) {
 }
 
 
-// const btn = document.getElementById('apply-btn')
-//     const code = document.getElementById('inputed');
-//     btn.addEventListener('click', function(){
-//         const coupon = code.value;
-//         console.log(coupon)
-//     })
+
