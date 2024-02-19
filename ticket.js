@@ -27,26 +27,31 @@ function billing(seat, price, total) {
 function couponNew(value) {
     const btn = document.getElementById('apply-btn')
     const code = document.getElementById('inputed');
+    const discount = document.getElementById('discount');
+    const discountPrice = document.getElementById('discountPrice');
     const invalidCoupon = document.getElementById('invalid-coupon');
     let grandPrice = document.getElementById('grand-total');
     btn.addEventListener('click', function () {
         const coupon = code.value;
         if (value === 4 && coupon === 'NEW15') {
             let grandTotal = total - total * 0.15;
+            discountPrice.innerText = total * 0.15;
+            discount.classList.remove('hidden');
             grandPrice.innerText = grandTotal;
-            invalidCoupon.innerText = "";
             console.log(value)
-            disableBtn('apply-btn');
+                disableBtn('apply-btn');
             return disableBtn('inputed');
 
         }
         else if (value === 4 && coupon === 'Couple 20') {
             let grandTotal = total - total * 0.2;
+            discountPrice.innerText = total * 0.2;
+            discount.classList.remove('hidden');
             grandPrice.innerText = grandTotal;
-            invalidCoupon.innerText = "";
             disableBtn('apply-btn');
             return disableBtn('inputed');
         }
+        
         // else if (value !== 4) {
         //     invalidCoupon.innerText = 'you must select 4 seat for use coupon'
         // }
@@ -55,6 +60,7 @@ function couponNew(value) {
         // }
 
     })
+    
 }
 
 
