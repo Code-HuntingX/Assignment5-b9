@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                             <div>
-                                <div class="flex bg-[#1DD10026] w-[180px] rounded-xl p-[17px] gap-2 ml-6">
+                                <div class="flex bg-[#1DD10026] w-[180px] rounded-xl p-[17px] gap-2 inter font-semibold">
                                     <img src="./images/seat-green.png" alt="">
                                     <p><span id="abailable-seat">40</span> Seats left</p>
                                 </div>
@@ -182,10 +182,9 @@
             <section class="grid grid-cols-12 p-8 ">
                 <!-- seat  -->
                 <div class="col-span-6 border-r-2 border-dashed pr-12">
-                    <h1>Select your seat</h1>
+                    <h1 class="text-2xl font-semibold raleway">Select your seat</h1>
                     <hr class="border-dashed mt-6 mb-4">
                     <div class="flex justify-between">
-
                         <div class="flex gap-2">
                             <img src="./images/seat-gray.png" alt="">
                             <h3>Abailable</h3>
@@ -309,10 +308,10 @@
                 </div>
 
                 <!-- payment -->
-                <div class="col-span-6 px-8">
-                    <h1 class="">Select Your Seat</h1>
-                    <hr class="border-dashed mt-6">
-                    <div>
+                <div class="col-span-6 px-8 py-8 bg-white rounded-lg ml-16">
+                    <h1 class="text-2xl font-semibold raleway">Order Summary</h1>
+                    <hr class="border-dashed my-2">
+                    <div class="bg-gray-50 rounded-xl">
                         <div class="overflow-x-auto">
                             <table class="table">
                                 <!-- head -->
@@ -330,7 +329,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="grid grid-cols-2 px-4 my-3">
+                    <div class="grid grid-cols-2 px-4 my-3 font-semibold inter">
                         <h1>Total Price</h1>
                         <h2 class="pl-36">BDT <span id="total-price">0</span></h2>
                     </div>
@@ -338,11 +337,11 @@
                     <h2 id="invalid-coupon" class="mx-10 text-red-500 text-sm"></h2>
                     <div class="flex gap-4 pl-10">
                         <input id="inputed" type="text" placeholder="Have any copupon?"
-                            class="input input-bordered w-full max-w-xs border-none" />
+                            class="input input-bordered w-full max-w-xs" />
                         <button id="apply-btn" class="btn btn-success">Apply</button>
                     </div>
                     <!-- grand total  -->
-                    <div class="grid grid-cols-2 px-4 mt-3">
+                    <div class="grid grid-cols-2 px-4 mt-3 mb-8 font-semibold inter">
                         <h1>Grand Total</h1>
                         <h2 class="pl-36">BDT <span id="grand-total">0</span></h2>
                     </div>
