@@ -73,7 +73,7 @@ function nextBtn(id) {
             inputValue = event.target.value;
             const pass = passanger.value.length;
             const number = phoneNumber.value.length;
-            if (seatValue === 4 && pass > 0 && number > 0) {
+            if (seatValue >= 1 && number > 0) {
                 nextButton.classList.remove('hidden');
             }
         })
