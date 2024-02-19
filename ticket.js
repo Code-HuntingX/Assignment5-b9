@@ -36,7 +36,8 @@ function couponNew(value) {
             grandPrice.innerText = grandTotal;
             invalidCoupon.innerText = "";
             console.log(value)
-            return disableBtn('apply-btn');
+                disableBtn('apply-btn');
+            return disableBtn('inputed');
 
         }
         else if (value === 4 && coupon === 'Couple 20') {
@@ -54,6 +55,8 @@ function couponNew(value) {
 
     })
 }
+
+
 
 
 

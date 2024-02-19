@@ -14,9 +14,6 @@ for (const seats of allSeats) {
     seats.addEventListener('click', function () {
         let seatNumber = seats.textContent;
         let i = setNum.length - 1;
-        console.log(i)
-   
-
 
         if (!setNum.includes(seatNumber)) {
             if (seat >= 4) {
@@ -24,7 +21,6 @@ for (const seats of allSeats) {
     
             }
             setNum.push(seatNumber);
-            i += 1;
             seat += 1;
             abailabeSeat -= 1;
             setInnerText('seat', seat);
@@ -36,8 +32,6 @@ for (const seats of allSeats) {
             //    disableBtn(seatNumber)
             clickOnces(seatNumber);
             setBg(seatNumber);
-            disableBtn(seatNumber);
-            let index = setNum[i];
 
             //    coupon 
             couponNew(seat);
@@ -62,16 +56,7 @@ function removeBg(id) {
 
 }
 
-function disableBtn(id) {
-    const setid = document.getElementById(id);
-    setid.setAttribute('disabled', 'true');
 
-}
-function disableBtn(id) {
-    const setid = document.getElementById(id);
-    setid.setAttribute('disabled', 'true');
-
-}
 
 function clickOnces(id) {
     let click = document.getElementById(id);
