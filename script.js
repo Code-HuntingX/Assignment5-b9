@@ -56,6 +56,12 @@ function removeBg(id) {
 
 }
 
+function disableBtn(id) {
+    const setid = document.getElementById(id);
+    setid.classList.add('hidden');
+
+}
+
 
 
 function clickOnces(id) {
