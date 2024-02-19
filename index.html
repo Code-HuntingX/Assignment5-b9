@@ -25,6 +25,7 @@
         .kbd-lg {
             cursor: pointer;
         }
+
     </style>
 </head>
 
@@ -348,34 +349,36 @@
 
                     <!-- ----------------passenger info----------------- -->
                     <div>
-                        <label class="form-control w-full max-w-screen-sm">
-                            <div class="label">
-                                <span class="label-tex text-base font-semibold">Passenger Name*</span>
+                        <div class="flex justify-center flex-col">
+                            <div>
+                                <label class="form-control w-full max-w-screen-sm">
+                                    <div class="label">
+                                        <span class="label-tex text-base font-semibold">Passenger Name*</span>
+                                    </div>
+                                    <input id="passenger" type="text" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
+                                        required />
+                                </label>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-tex text-base font-semibold">Phone number*</span>
+                                    </div>
+                                    <input id="phone-number" type="number" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
+                                        required />
+                                </label>
+                                <label class="form-control w-full max-w-screen-lg">
+                                    <div class="label">
+                                        <span class="label-tex text-base font-semibold">Email id</span>
+                                    </div>
+                                    <input id="email" type="email" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
+                                        required />
+                                </label>
                             </div>
-                            <input id="passenger" type="text" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
-                                required />
-                        </label>
-                        <label class="form-control w-full max-w-xs">
-                            <div class="label">
-                                <span class="label-tex text-base font-semibold">Phone number*</span>
-                            </div>
-                            <input id="phone-number" type="number" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
-                                required />
-                        </label>
-                        <label class="form-control w-full max-w-screen-lg">
-                            <div class="label">
-                                <span class="label-tex text-base font-semibold">Email id</span>
-                            </div>
-                            <input id="email" type="email" placeholder="Type here" class="input inputing input-bordered w-full max-w-xs"
-                                required />
-                        </label>
-                        <!-- .................... -->
-                        <div>
-
+                            <button id="next-btn" class="btn mt-10 w-[325px]" onclick="my_modal_4.showModal()">Next</button>
                         </div>
+                        <!-- .................... -->
                         <!-- ------------modal start ------------------ -->
                         <!-- You can open the modal using ID.showModal() method -->
-                        <button id="next-btn" class="btn hidden mt-10 w-full" onclick="my_modal_4.showModal()">Next</button>
+                        
                         <dialog id="my_modal_4" class="modal">
                             <div class="modal-box w-11/12 max-w-3xl">
                                 <div class="text-center">
