@@ -62,7 +62,7 @@ function disableBtn(id) {
 
 }
 
-
+console.log('ok')
 
 function clickOnces(id) {
     let click = document.getElementById(id);
