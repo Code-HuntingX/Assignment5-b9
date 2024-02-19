@@ -35,6 +35,7 @@ for (const seats of allSeats) {
 
             //    coupon 
             couponNew(seat);
+            nextBtn(seat);
 
         }
     })

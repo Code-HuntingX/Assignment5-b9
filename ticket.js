@@ -47,15 +47,39 @@ function couponNew(value) {
             disableBtn('apply-btn');
             return disableBtn('inputed');
         }
-        else if (value !== 4) {
-            invalidCoupon.innerText = 'you must select 4 seat for use coupon'
-        }
-        else if (value === 4) {
-            invalidCoupon.innerText = 'coupon invalid or used'
-        }
+        // else if (value !== 4) {
+        //     invalidCoupon.innerText = 'you must select 4 seat for use coupon'
+        // }
+        // else if (value === 4) {
+        //     invalidCoupon.innerText = 'coupon invalid or used'
+        // }
 
     })
 }
+
+
+function nextBtn(id) {
+    const nextButton = document.getElementById('next-btn')
+    const seatValue = id;
+    const passanger = document.getElementById('passenger');
+    const phoneNumber = document.getElementById('phone-number');
+
+    const emailId = document.getElementById('email');
+    const email = emailId.value.length;
+
+    const inputs = document.getElementsByClassName('inputing');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('keyup', function (event) {
+            inputValue = event.target.value;
+            const pass = passanger.value.length;
+            const number = phoneNumber.value.length;
+            if (seatValue === 4 && pass > 0 && number > 0) {
+                nextButton.classList.remove('hidden');
+            }
+        })
+    }
+}
+
 
 
 
