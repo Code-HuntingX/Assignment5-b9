@@ -36,7 +36,7 @@ function couponNew(value) {
             grandPrice.innerText = grandTotal;
             invalidCoupon.innerText = "";
             console.log(value)
-                disableBtn('apply-btn');
+            disableBtn('apply-btn');
             return disableBtn('inputed');
 
         }
@@ -44,7 +44,8 @@ function couponNew(value) {
             let grandTotal = total - total * 0.2;
             grandPrice.innerText = grandTotal;
             invalidCoupon.innerText = "";
-            return disableBtn('apply-btn');
+            disableBtn('apply-btn');
+            return disableBtn('inputed');
         }
         else if (value !== 4) {
             invalidCoupon.innerText = 'you must select 4 seat for use coupon'
